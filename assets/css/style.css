@@ -25595,3 +25595,105 @@ textarea {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.containerfs {
+  display: grid;
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+  place-items: center;
+  width: 82%;
+}
+.slide-containerfs {
+  -webkit-animation: scroll-left 20s linear infinite;
+  animation: scroll-left 20s linear infinite;
+  display: flex;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  width: 3000px;
+}
+.reverse {
+  -webkit-animation: scroll-right 20s linear infinite;
+  animation: scroll-right 20s linear infinite;
+  -webkit-transform: translateX(-1500px);
+  transform: translateX(-1500px);
+}
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-1500px);
+    transform: translateX(-1500px);
+  }
+}
+@keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-1500px);
+    transform: translateX(-1500px);
+  }
+}
+@-webkit-keyframes scroll-right {
+  0% {
+    -webkit-transform: translateX(-1500px);
+    transform: translateX(-1500px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes scroll-right {
+  0% {
+    -webkit-transform: translateX(-1500px);
+    transform: translateX(-1500px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.slide-images {
+  align-items: center;
+  display: flex;
+  height: 250px;
+  width: 250px;
+  padding: 15px;
+  -webkit-perspective: 100px;
+  perspective: 100px;
+}
+.imgs {
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  width: 100%;
+}
+.imgs:hover {
+  -webkit-transform: translateZ(20px);
+  transform: translateZ(20px);
+}
+
+@media (max-width: 768px) {
+  .floatsection {
+    min-height: 80vh;
+    padding: 0 9% 5rem;
+  }
+  .merged-heading {
+    font-size: 2rem;
+    margin: auto;
+    padding: 20px;
+  }
+  .imgs {
+    width: 100%;
+  }
+  .slide-images {
+    height: 150px;
+    width: 150px;
+  }
+}
