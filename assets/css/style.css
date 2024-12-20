@@ -26050,3 +26050,141 @@ position: absolute;
     margin-top: -25px;
     font-size: 20px;
 }
+
+
+
+
+/* tiles calculator */
+
+.tilestips {
+  background: none repeat scroll 0 0;
+  /* border: 1px solid gray; */
+  display: inline-block;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.tilestips div {
+  background: #fff url(../../assets/images/tilePattern.png) repeat scroll -4px -4px;
+  border: 1px solid #289bbc;
+  box-shadow: 0 0 8px 5px #fff;
+  left: 52%;
+  position: absolute;
+  top: 52%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.tilestips tileFt {
+  background: #868686 none repeat scroll 0 0;
+  margin-bottom: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+}
+
+.tilestips .tileFt {
+  background: #868686 none repeat scroll 0 0;
+  margin-bottom: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+}
+
+.horzFt {
+  border-top: 1px dashed #868686;
+  height: 0;
+  left: 0;
+  top: -20px;
+  width: 100%;
+}
+
+.tilestips .tileFt span {
+  background: #f9f9f9 none repeat scroll 0 0;
+  color: gray;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  height: 20px;
+  position: absolute;
+  text-transform: uppercase;
+  width: 50px;
+}
+
+.tilestips .horzFt span {
+  margin-left: 50%;
+  margin-top: -12px;
+  transform: translateX(-50%);
+}
+
+.tilestips .vertFt span {
+  margin-left: 50%;
+  margin-top: -12px;
+  transform: translateX(-50%);
+}
+
+
+.tilestips .vertFt span {
+  margin-left: -27px;
+  top: 50%;
+  /* transform: rotate(-90deg) translateX(20%); */
+}
+
+.calculator-text{
+  font-size: 20px;
+  font-weight: 600
+}
+
+.calculator-heading{
+  background-color: #253b2f;
+  color: #fff !important;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 20px !important;
+}
+
+.calculator-box{
+    display: block;
+      width: 100%;
+      padding: 0.375rem 0.75rem;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--bs-body-color);
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: var(--bs-body-bg);
+      background-clip: padding-box;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      /* --bs-border-radius: 2 !important; */
+      /* --bs-border-width: 2px !important; */
+      --bs-border-color: var(--bs-body-color) !important;
+      --bs-placeholder-color: rgba(var(--bs-body-color-rgb), 0.2) !important;
+      /* padding: 0.784rem 0.75rem !important; */
+      border-radius: 10px;
+      border-width: 2px !important;
+}
+
+
+
+.calculator-box-arrow {
+  appearance: none;
+  /* Removes default styling */
+  -webkit-appearance: none;
+  /* For Safari */
+  -moz-appearance: none;
+  /* For Firefox */
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>') no-repeat right 10px center;
+
+}
+
+.calculator-box-arrow:focus {
+  outline: none;
+  /* Removes the focus outline */
+
+  /* Adds a focus border color */
+}
+
