@@ -25869,17 +25869,34 @@ a.product-hover:hover, .drop-dwon-2{
 
 /* 600x1200 picture button hover effact */
 
+
+/* ===============================================
+====================600x1200====================
+=============================================== */
 .one-img{
   width: 225px !important;
   height: 450px !important;
 }
 
+@media only screen and (max-width: 1200px) {
+  .one-img {
+      width: 175px !important;
+      height: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+  .one-img {
+      width: 225px !important;
+      height: 450px !important;
+    }
+}
+
 .one-img-2 {
   width: 225px !important;
     height: 450px !important;
-  /* width: 300px !important;
-  height: 625px !important; */
 }
+
 .shop-image img{
   width: 100%;
   background-size: cover;
@@ -25889,15 +25906,7 @@ a.product-hover:hover, .drop-dwon-2{
   transform: scale(1.2);
 }
 
-.shopping-info-wrapper{
-  /* justify-content: center !important; */
-  /* margin-left: 40px; */
-
-}
-
-
 .shop-image-wrapper::before {
-
   content: "";
   position: absolute;
   top: 0;
@@ -26010,6 +26019,159 @@ position: absolute;
        margin-top: 30px;
        margin-left: 15px !important;
 }
+
+/* ===============================================
+====================600x600====================
+=============================================== */
+.two-img {
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.two-tiles-heading {
+  padding-bottom: 3px;
+  color: var(--bs-body-color);
+  --bs-link-hover-animation-color: var(--bs-primary);
+  background: linear-gradient(to right, var(--bs-link-hover-animation-color) 0%, var(--bs-link-hover-animation-color) 100%);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  transition-duration: 0.5s;
+  --bs-btn-border-radius: 0 !important;
+  margin-left: 58px;
+}
+
+.shop-details:hover .two-tiles-heading {
+  background-size: 100% 2px;
+  margin-top: 30px;
+  margin-left: 30px !important;
+}
+
+@media only screen and (max-width: 1400px) {
+.two-tiles-heading {
+    margin-left: 1px;
+  }
+
+  .shop-details:hover .two-tiles-heading {
+    margin-left: 1px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .two-tiles-heading {
+    margin-left: 15px;
+  }
+
+  .shop-details:hover .two-tiles-heading {
+    margin-left: 1px !important;
+  }
+}
+
+/* ===============================================
+====================1200x1800====================
+=============================================== */
+.three-img {
+  width: 310px !important;
+  height: 490px !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .three-img {
+  width: 260px !important;
+  height: 440px !important;
+}
+}
+
+.three-tiles-heading {
+  padding-bottom: 3px;
+  color: var(--bs-body-color);
+  --bs-link-hover-animation-color: var(--bs-primary);
+  background: linear-gradient(to right, var(--bs-link-hover-animation-color) 0%, var(--bs-link-hover-animation-color) 100%);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  transition-duration: 0.5s;
+  --bs-btn-border-radius: 0 !important;
+  margin-left: 53px;
+}
+
+.shop-details:hover .three-tiles-heading {
+  background-size: 100% 2px;
+  margin-top: 30px;
+  margin-left: 20px !important;
+}
+
+@media only screen and (max-width: 1400px) {
+.three-tiles-heading {
+    margin-left: 24px;
+  }
+
+  .shop-details:hover .three-tiles-heading {
+    margin-left: 1px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .three-tiles-heading {
+      margin-left: 3px;
+    }
+
+    .shop-details:hover .three-tiles-heading {
+      margin-left: -10px !important;
+      }
+  }
+
+    @media only screen and (max-width: 1000px) {
+      .three-tiles-heading {
+        margin-left: 18px;
+      }
+  
+      .shop-details:hover .three-tiles-heading {
+        margin-left: -5px !important;
+      }
+    }
+
+         @media only screen and (max-width: 999px) {
+           .three-tiles-heading {
+             margin-left: 37px;
+           }
+    
+           .shop-details:hover .three-tiles-heading {
+             margin-left: 10px !important;
+           }
+         }
+
+         @media only screen and (max-width: 768px) {
+        .three-tiles-heading {
+         margin-left: 127px;
+        }
+        
+         .shop-details:hover .three-tiles-heading {
+           margin-left: 100px !important;
+          }
+        }
+
+                 @media only screen and (max-width: 550px) {
+                   .three-tiles-heading {
+                     margin-left: 16px;
+                   }
+        
+                   .shop-details:hover .three-tiles-heading {
+                     margin-left: 100px !important;
+                   }
+                 }
+
+
+
+/* ===============================================
+=================1200x1800 End ===================
+=============================================== */
 
 
 /* Gallery Grid */
