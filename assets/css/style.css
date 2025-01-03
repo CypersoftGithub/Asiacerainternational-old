@@ -26350,3 +26350,13 @@ position: absolute;
   /* Adds a focus border color */
 }
 
+
+/* packing-details-section */
+
+.packing-details-section{
+  overflow-x: auto;
+}
+
+.packing-details-section::-webkit-scrollbar{
+  width: 0px;
+}
