@@ -1,3 +1,33 @@
+// loader button
+
+document.addEventListener("DOMContentLoaded", function () {
+    const preloader = document.getElementById("preloader");
+    const hideLoaderButton = document.querySelector("#preloader .hide-loader");
+
+    // Function to hide the preloader
+    function hidePreloader() {
+        preloader.classList.add("hide");
+    }
+
+    // Automatically hide the preloader after a delay (e.g., 3 seconds)
+    setTimeout(hidePreloader, 2000);
+
+    // Allow users to manually hide the preloader
+    if (hideLoaderButton) {
+        hideLoaderButton.addEventListener("click", hidePreloader);
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.getElementById("preloader");
+  const hideLoaderButton = document.querySelector(".hide-loader");
+
+  hideLoaderButton.addEventListener("click", () => {
+    preloader.classList.add("hide");
+  });
+});
+
+// loader button end 
 
 (function ($) {
   "use strict";
@@ -447,7 +477,7 @@
       map.setView(e.target.getLatLng(), 16);
     }
   
-    $.each(architronixLocations, function(index, location) {
+    $.each(Asiacera-InternationalLocations, function(index, location) {
       // Create Marker
       var marker = L.marker(location.markerPoint, {
         title: location.title,
@@ -455,7 +485,7 @@
       }).addTo(map);
   
       // Bind Popup
-      marker.bindPopup(`<div class="card card-map architronix-map-card"><div class="card-body">
+      marker.bindPopup(`<div class="card card-map Asiacera-International-map-card"><div class="card-body">
                           <h5 class="card-title service-title">${location.title}</h5><p class="mb-0 fw-semibold">${location.subtitle}</p><p class="mb-0 contact-home">${location.address}</p>                          
                         </div></div>`).on('click', clickZoom);
   
@@ -765,3 +795,5 @@ new WOW().init();
     }
     // end if innerWidth
   });
+
+  

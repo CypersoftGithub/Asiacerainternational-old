@@ -8655,12 +8655,12 @@ body {
      object-fit: cover;
 }
 
-.carousel-captions .architronix-button {
+.carousel-captions .Asiacera-International-button {
   margin-top: 35px;
 }
 
 @media (max-width: 1620px) {
-  .carousel-captions .architronix-button {
+  .carousel-captions .Asiacera-International-button {
     margin-top: 16px;
   }
 }
@@ -9192,11 +9192,11 @@ body {
   }
 }
 
-.architronix-nav .nav {
+.Asiacera-International-nav .nav {
   --bs-nav-link-padding-x: 1.75rem;
 }
 
-.architronix-nav .navbar {
+.Asiacera-International-nav .navbar {
   --bs-navbar-nav-link-padding-x: 1.75rem;
   --bs-navbar-padding-y: 0;
   --bs-navbar-active-color:  var(--bs-secondary);
@@ -9205,33 +9205,33 @@ body {
 }
 
 @media (max-width: 1199.98px) {
-  .architronix-nav .navbar {
+  .Asiacera-International-nav .navbar {
     --bs-navbar-padding-y: 12px;
   }
 }
 
-.architronix-nav .navbar-nav {
+.Asiacera-International-nav .navbar-nav {
   --bs-nav-link-font-weight: 500;
 }
 
-.architronix-nav .nav-link {
+.Asiacera-International-nav .nav-link {
   --bs-navbar-nav-link-padding-x: 28px;
   --bs-nav-link-padding-x: 28px;
   --bs-nav-link-padding-y: 34px;
   --bs-navbar-active-color: var(--bs-secondary);
 }
 
-.architronix-nav .nav-link.active, .architronix-nav .nav-link.show, .architronix-nav .nav-link:hover {
+.Asiacera-International-nav .nav-link.active, .Asiacera-International-nav .nav-link.show, .Asiacera-International-nav .nav-link:hover {
   background: var(--bs-primary);
   color: var(--bs-navbar-active-color);
 }
 
-.architronix-nav .nav-link:focus-visible {
+.Asiacera-International-nav .nav-link:focus-visible {
   box-shadow: none;
 }
 
 @media (max-width: 1400px) {
-  .architronix-nav .nav-link {
+  .Asiacera-International-nav .nav-link {
     --bs-navbar-nav-link-padding-x: 24px;
     --bs-nav-link-padding-x: 24px;
     --bs-nav-link-padding-y: 30px;
@@ -9239,7 +9239,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .architronix-nav .nav-link {
+  .Asiacera-International-nav .nav-link {
     --bs-navbar-nav-link-padding-x: 22px;
     --bs-nav-link-padding-x: 22px;
     --bs-nav-link-padding-y: 22px;
@@ -10456,7 +10456,7 @@ body {
   z-index: 1;
 }
 
-.project-contents .project-info p, .project-contents .project-info .architronix-button {
+.project-contents .project-info p, .project-contents .project-info .Asiacera-International-button {
   animation: fadeInUpBig 3s;
 }
 
@@ -11540,7 +11540,7 @@ body {
   margin: 0 auto;
 }
 
-.hero-landing-contents .architronix-button {
+.hero-landing-contents .Asiacera-International-button {
   margin-top: var(--bs-hero-btns-margin-top);
 }
 
@@ -11648,19 +11648,19 @@ svg {
   font-weight: 800 !important;
 }
 
-.architronix-button {
+.Asiacera-International-button {
   display: inline-block;
   position: relative;
   z-index: 1;
 }
 
 @media (max-width: 1520px) {
-  .architronix-button .btn {
+  .Asiacera-International-button .btn {
     --bs-btn-padding-x: 1.37rem;
     --bs-btn-padding-y: 0.568rem;
     --bs-btn-font-size: 18px;
   }
-  .architronix-button svg {
+  .Asiacera-International-button svg {
     width: 28px;
     height: 20px;
   }
@@ -12471,12 +12471,12 @@ textarea {
   left: 0;
 }
 
-.menu-image-contents .architronix-button {
+.menu-image-contents .Asiacera-International-button {
   width: 100%;
 }
 
 @media (max-width: 1199.98px) {
-  .menu-image-contents .architronix-button {
+  .menu-image-contents .Asiacera-International-button {
     width: auto;
   }
 }
@@ -13037,7 +13037,7 @@ textarea {
   }
 }
 
-.preloader {
+/* .preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -13054,7 +13054,188 @@ textarea {
 .loaded .preloader {
   visibility: hidden;
   opacity: 0;
+} */
+
+
+
+
+/*==================================== Preloader start ====================================
+=========================================================================================
+=========================================================================================*/
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
 }
+
+#preloader.hide {
+  opacity: 0;
+  visibility: hidden;
+  width: 0%;
+}
+
+#preloader .hide-loader {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  z-index: 3;
+  transition: all 1s ease-in-out;
+}
+
+#preloader.hide .hide-loader {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader-inner {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Spinner Loading */
+.preloader-inner .spinner {
+  animation: spinner 1s infinite linear;
+  border-radius: 50%;
+  border: 3px solid #2e2e2e;
+  border-top-color: #ffffff;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 3.5em auto;
+}
+
+/* Loading text */
+.preloader-inner .loading-text {
+  font-weight: 700;
+  font-size: calc(1.5rem + 2.57143vw);
+  line-height: calc(1.5rem + 2.57143vw);
+  text-align: center;
+  user-select: none;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 1400px) {
+  .preloader-inner .loading-text {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .preloader-inner .loading-text {
+    line-height: 3.75rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .preloader-inner .loading-text {
+    font-size: 1.5rem;
+    /* Adjust to a smaller font size */
+    line-height: 1.5rem;
+    /* Ensure line height matches */
+  }
+
+  #preloader .hide-loader {
+    font-size: 0.875rem;
+    /* Make the button text smaller */
+    padding: 3px 7px;
+    /* Adjust padding for the smaller button */
+  }
+}
+
+#preloader.hide .preloader-inner .loading-text {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader-inner .loading-text .characters {
+  position: relative;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.preloader-inner .loading-text .characters:before {
+  content: attr(data-preloader-text);
+  position: absolute;
+  left: 0;
+  top: 0px;
+  opacity: 0;
+  transform: rotateY(-90deg);
+  color: white;
+  animation: characters 4s infinite;
+}
+
+.preloader-inner .loading-text .characters:nth-child(2):before {
+  animation-delay: 0.2s;
+}
+
+.preloader-inner .loading-text .characters:nth-child(3):before {
+  animation-delay: 0.4s;
+}
+
+.preloader-inner .loading-text .characters:nth-child(4):before {
+  animation-delay: 0.6s;
+}
+
+.preloader-inner .loading-text .characters:nth-child(5):before {
+  animation-delay: 0.8s;
+}
+
+.preloader-inner .loading-text .characters:nth-child(6):before {
+  animation-delay: 1s;
+}
+
+.preloader-inner .loading-text .characters:nth-child(7):before {
+  animation-delay: 1.2s;
+}
+
+/* Animation of the preloader */
+@keyframes spinner {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* Animation of letters loading from the preloader */
+@keyframes characters {
+
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+/* Preloader End */
+
+/*==================================== Preloader End ====================================
+=========================================================================================
+=========================================================================================*/
 
 .section-404 .section-title-wrapper {
   left: 20px;
@@ -25620,7 +25801,7 @@ textarea {
   margin: auto;
   overflow: hidden;
   place-items: center;
-  width: 82%;
+  /* width: 82%; */
 }
 .slide-containerfs {
   -webkit-animation: scroll-left 20s linear infinite;
@@ -26480,6 +26661,8 @@ position: absolute;
 }
 
 
+/* map section  */
+
  .map-container {
    max-width: 100%;
    /* Ensures the map is responsive */
@@ -26490,3 +26673,37 @@ position: absolute;
    /* Optional: Rounds the edges */
    overflow: hidden;
    /* Prevents content from overflowing the container */}
+   
+
+   
+
+/* ===================================================
+==================catalogue========================
+=================================================== */
+
+.catalogue-img{
+  width: 300px;
+  height: 230px;
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+
+.catalogue-button{
+  margin-left: -12px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .catalogue-button {
+    margin-left: 23px !important;
+    font-size: 10px !important;
+
+  }
+}
+
+@media only screen and (max-width: 989px) {
+.catalogue-button {
+    margin-left: -12px !important;
+    font-size: 18px !important;
+
+  }
+}
