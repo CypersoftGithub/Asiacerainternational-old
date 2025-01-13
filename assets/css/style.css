@@ -26707,3 +26707,23 @@ position: absolute;
 
   }
 }
+
+.filter-buttons{
+  font-size: 20px;
+  margin: 22px;
+  color: #000;
+}
+
+@media only screen and (max-width: 1200px) {
+  .filter-buttons {
+      font-size: 20px;
+      margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+  .filter-buttons {
+    font-size: 12px;
+    margin: 3px;
+  }
+}
