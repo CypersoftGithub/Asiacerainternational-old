@@ -26727,3 +26727,7 @@ position: absolute;
     margin: 3px;
   }
 }
+
+.hero-image{
+  filter: blur(0.9px);
+}
