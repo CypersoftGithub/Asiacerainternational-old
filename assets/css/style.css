@@ -26623,6 +26623,16 @@ position: absolute;
   background-color: #253b2f;
 }
 
+@media only screen and (max-width: 1200px) {
+  .dropdown-submenu:hover>.dropdown-menu {
+      display: contents;
+      background-color: white;
+    }
+    .submenu-new{
+    padding: 10px 21px;
+  }
+    }
+
 .submenu-new:hover{
   background-color: white;
   color: #253B2F;
