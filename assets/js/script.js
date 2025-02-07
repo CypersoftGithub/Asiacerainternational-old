@@ -796,4 +796,18 @@ new WOW().init();
     // end if innerWidth
   });
 
-  
+  document.addEventListener('DOMContentLoaded', function () {
+    const porcelainDropdown = document.getElementById('porcelainDropdown');
+
+    porcelainDropdown.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default link behavior
+        const subMenu = this.nextElementSibling;
+
+        // Toggle submenu display
+        if (subMenu.style.display === 'block') {
+            subMenu.style.display = 'none';
+        } else {
+            subMenu.style.display = 'block';
+        }
+    });
+});

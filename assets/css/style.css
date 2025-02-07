@@ -12567,9 +12567,10 @@ textarea {
 
 .dropdown .dropdown-item {
   font-weight: 500;
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
   gap: 40px;
+  color: white;
 }
 
 .dropdown .dropdown-item .link-hover-animation-1 {
@@ -13131,6 +13132,7 @@ textarea {
   text-align: center;
   user-select: none;
   transition: all 0.5s ease-in-out;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 @media (min-width: 1400px) {
@@ -25917,136 +25919,6 @@ a.product-hover:hover, .drop-dwon-2{
 
 
 
-/* General styling for menu descriptions */
-.menu-description {
-  position: relative;
-}
-
-.submenu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
-  top: 100%; 
-  left: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  z-index: 10;
-  width: max-content;
-  /* position: absolute; */
-}
-
-.submenu li {
-  padding: 5px 15px;
-}
-
-.submenu li a {
-  text-decoration: none;
-  color: white;
-  /* display: block; */
-  padding: 5px;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.submenu li a:hover {
-  /* background-color: #007bff; */
-  /* color: #fff; */
-  border-radius: 3px;
-  text-decoration: none;
-}
-
-/* Show submenu on hover */
-.menu-description:hover .submenu {
-  display: block;
-}
-
-/* Add some hover animation to the main headings */
-.product-hover:hover {
-  text-decoration: none;
-}
-
-
-
-/* .submenu{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  z-index: 10;
-  width: max-content;
-  margin: -54px -125px;
-} */
-
-
-@media (max-width: 1200px) {
- 
-  .submenu{
-    margin: -4px -12px;
-  }
-  .menu-description:hover .submenu {
-    display: flex;
-  }
-} 
-
-
-
-.menu-description_footer {
-  position: relative;
-}
-
-.submenu_footer {
-  list-style: none;
-  padding: 0;
-  /* margin: 0; */
-  display: none;
-  top: 100%; 
-  left: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  z-index: 10;
-  width: max-content;
-  margin-left: -10px;
-}
-
-.submenu_footer li {
-  padding: 1px 1px;
-  margin-top: -5px;
-}
-
-.submenu_footer li a {
-  text-decoration: none;
-  color: black;
-  /* display: block; */
-  padding: 5px;
-  font-size: 20px;
-  font-weight: 400;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 10%;
-}
-
-.submenu_footer li a:hover {
-  /* background-color: #007bff; */
-  /* color: #fff; */
-  border-radius: 3px;
-  text-decoration: none;
-}
-
-/* Show submenu on hover */
-.menu-description_footer:hover .submenu_footer {
-  display: flex;
-}
-
-/* Add some hover animation to the main headings */
-.product-hover_footer:hover {
-  text-decoration: none;
-}
 
 /* 600x1200 picture button hover effact */
 
@@ -26730,4 +26602,28 @@ position: absolute;
 
 .hero-image{
   filter: blur(0.9px);
+}
+
+/* Hide the submenu by default */
+.dropdown-submenu .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+ 
+}
+
+/* Show submenu on hover */
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+  background-color: #253b2f;
+}
+
+.submenu-new:hover{
+  background-color: white;
+  color: #253B2F;
 }
