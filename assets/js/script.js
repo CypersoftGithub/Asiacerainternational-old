@@ -29,6 +29,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // loader button end 
 
+  // header start 
+		document.addEventListener("DOMContentLoaded", function () {
+			// Handle main dropdown
+			document.querySelector(".main-dropdown").addEventListener("click", function (e) {
+				e.preventDefault();
+				let parent = this.parentElement;
+
+				// Toggle dropdown visibility
+				parent.classList.toggle("active");
+			});
+
+			// Handle submenu
+			document.querySelector(".submenu-toggle").addEventListener("click", function (e) {
+				e.preventDefault();
+				let submenuParent = this.parentElement;
+
+				// Toggle submenu visibility
+				submenuParent.classList.toggle("active");
+			});
+
+			// Close dropdown when clicking outside
+			document.addEventListener("click", function (event) {
+				if (!event.target.closest(".dropdown")) {
+					document.querySelectorAll(".dropdown").forEach(function (dropdown) {
+						dropdown.classList.remove("active");
+					});
+				}
+			});
+		});
+  // header end 
+
+
 (function ($) {
   "use strict";
 

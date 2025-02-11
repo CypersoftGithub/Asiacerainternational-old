@@ -3,6 +3,7 @@
    * Copyright 2011-2023 The Bootstrap Authors
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
+     @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
@@ -4502,13 +4503,14 @@ fieldset:disabled .btn {
 
 .dropdown-item:hover, .dropdown-item:focus {
   color: var(--bs-dropdown-link-hover-color);
-  background-color: var(--bs-dropdown-link-hover-bg);
+  /* background-color: var(--bs-dropdown-link-hover-bg); */
 }
 
 .dropdown-item.active, .dropdown-item:active {
   color: var(--bs-dropdown-link-active-color);
   text-decoration: none;
-  background-color: var(--bs-dropdown-link-active-bg);
+  color: black !important;
+  /* background-color: var(--bs-dropdown-link-active-bg); */
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -12524,6 +12526,7 @@ textarea {
   --bs-dropdown-item-separator-color: var(--bs-dropdown-link-color);
   animation: growDown 500ms ease-in-out forwards;
   transform-origin: top center;
+  background-color: #253b2f;
 }
 
 .dropdown .dropdown-menu.show.megamenu {
@@ -13132,7 +13135,9 @@ textarea {
   text-align: center;
   user-select: none;
   transition: all 0.5s ease-in-out;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Baloo Bhai 2", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 @media (min-width: 1400px) {
@@ -26617,23 +26622,64 @@ position: absolute;
  
 }
 
-/* Show submenu on hover */
-.dropdown-submenu:hover>.dropdown-menu {
+
+/* Hide dropdown menus initially */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px 0;
+  list-style: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+
+
+
+/* Show dropdown on active */
+.dropdown.active>.dropdown-menu {
   display: block;
-  background-color: #253b2f;
+  background-color: #253B2F;
+}
+
+
+/* Style for submenu */
+.dropdown-submenu {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+  min-width: 180px;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Show submenu when active */
+.dropdown-submenu.active>.submenu {
+      display: block;
+      background-color: #253B2F;
+      margin: -11px 3px;
 }
 
 @media only screen and (max-width: 1200px) {
-  .dropdown-submenu:hover>.dropdown-menu {
+  /* Show submenu when active */
+    .dropdown-submenu.active>.submenu {
       display: contents;
-      background-color: white;
+      background-color: #253B2F;
+      margin: -11px 3px;
     }
-    .submenu-new{
-    padding: 10px 21px;
-  }
-    }
-
-.submenu-new:hover{
-  background-color: white;
-  color: #253B2F;
 }
+
+
+
+
+  @media only screen and (max-width: 700px) {
+    .coming-soon-img {
+      width: 300px;
+        text-align: center;
+      }
+  }
