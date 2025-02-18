@@ -12724,7 +12724,7 @@ textarea {
 }
 
 .stroke-heading svg {
-  stroke: var(--bs-stroke-heading-color);
+  stroke: var(--bs-black);
   height: var(--bs-stroke-heading-height);
 }
 
@@ -13213,7 +13213,9 @@ textarea {
 .preloader-inner .loading-text .characters:nth-child(7):before {
   animation-delay: 1.2s;
 }
-
+.preloader-inner .loading-text .characters:nth-child(8):before {
+  animation-delay: 1.2s;
+}
 /* Animation of the preloader */
 @keyframes spinner {
   to {
@@ -26606,7 +26608,7 @@ position: absolute;
 }
 
 .hero-image{
-  filter: blur(0.9px);
+  filter: blur(1.9px);
 }
 
 /* Hide the submenu by default */
