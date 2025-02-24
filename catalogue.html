@@ -245,7 +245,8 @@
 										alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1c3xpsvEGpq6A3aU51beWO4Q-AvstlAes/view?usp=sharing">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -260,6 +261,48 @@
 						</div>
 					</div>
 
+					<!-- Modal with Contact Form -->
+					<div class="modal fade" id="downloadFormModal" tabindex="-1" aria-labelledby="downloadFormModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Fill the Form to Download</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<form id="contactForm" method="post"  name="catalogue_form">
+										<div class="mb-3">
+											<input type="text" class="form-control" id="InputName" name="InputName" placeholder="Your Name*"
+												required>
+										</div>
+										<div class="mb-3">
+											<input type="text" class="form-control" id="CompanyName" name="CompanyName"
+												placeholder="Company Name*" required>
+										</div>
+										<div class="mb-3">
+											<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email*"
+												required>
+										</div>
+										<div class="mb-3">
+											<select class="form-control" id="SelectCountry" name="SelectCountry" required>
+												<option value="" disabled selected>Select Country*</option>
+												<option value="USA">USA</option>
+												<option value="UK">UK</option>
+												<option value="India">India</option>
+												<option value="Australia">Australia</option>
+												<option value="Canada">Canada</option>
+											</select>
+										</div>
+										<input type="hidden" id="downloadLink" name="pdf"> <!-- Hidden input to store the download URL -->
+										<button type="submit" class="btn btn-primary w-100">Submit & Download</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
 					<div class="col-md-6 col-lg-3 product" data-size="600x600">
 						<div class="shop-details">
 							<div class="shop-image-wrapper position-relative">
@@ -267,7 +310,8 @@
 									<img src="assets/images/catalogue/600x600/Bookmatch-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1FZbEZWnQAnI3FCrabJaOviHpaocAp5rk/view?usp=sharing">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -289,7 +333,8 @@
 									<img src="assets/images/catalogue/600x600/Carving-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/166w6YdMcSy1BX5QonYpHSEbLItX4QHLl/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -311,7 +356,8 @@
 									<img src="assets/images/catalogue/600x600/Doble-charge-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/149T-PdQskkNduShHehKyXGy85Hp4yWIK/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -333,7 +379,8 @@
 									<img src="assets/images/catalogue/600x600/Glossy-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1qRa2nokDZRJqexK5b9HqanAsoJ2-01xR/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -355,7 +402,8 @@
 									<img src="assets/images/catalogue/600x600/Hl-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1LKFRRLvpQSGR18icYonxtzvPe52ue9iP/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -377,7 +425,8 @@
 									<img src="assets/images/catalogue/600x600/Marble-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1MEdoUW82Sf20Q1w5GXzQ0xnfkStJAUpd/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -399,7 +448,8 @@
 									<img src="assets/images/catalogue/600x600/Matt-finish.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1hg_vTBwpqtb3EkMSKUHRfJ4IlV1QWKaX/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -421,7 +471,8 @@
 									<img src="assets/images/catalogue/600x600/Matt-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1rbq9iQq4-Li44YcsRNlM6I0jakW481RM/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -443,7 +494,8 @@
 									<img src="assets/images/catalogue/600x600/Moroccan-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1quoq9BEtfimhhexTaNijNURez_niXaVd/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -465,7 +517,8 @@
 									<img src="assets/images/catalogue/600x600/Rustic-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1QeJj61_KgawqjcRK6r6C8YfOulNVMH1m/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -487,7 +540,8 @@
 									<img src="assets/images/catalogue/600x600/Satin-matt-series-1.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1yS-d0NxQOFZhtKaQgqRYuNq3DN9RECi2/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -509,7 +563,8 @@
 									<img src="assets/images/catalogue/600x600/Satin-matt-series-02.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1-4V2U65VjB48B5ZeWDGyxKJYgPoRA7e-/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -531,7 +586,8 @@
 									<img src="assets/images/catalogue/600x600/Sugar-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1wtxPKO5p9grfZHrSC4s3BB1BM9oAcqcN/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -553,7 +609,8 @@
 									<img src="assets/images/catalogue/600x600/Terrazzo-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1zN-HcnMrAQ7fjPOoHpPwNFD_azhQgocX/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -575,7 +632,8 @@
 									<img src="assets/images/catalogue/600x600/Wooden-series-01.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1cu9Z8CZrvbr9p6z5NjZws1ksjFzCjCe3/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -597,7 +655,8 @@
 									<img src="assets/images/catalogue/600x600/Wooden-series-02.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1sMfxgiY3607bskwDl4FM4FYT8HyxqWYO/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -619,7 +678,8 @@
 									<img src="assets/images/catalogue/600x600/Wood-punch-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1OCcAqwZO6MD9DGEX2deBU8viQVtA5HpQ/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -646,9 +706,10 @@
 										alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1p6MgIp_x1MKUjmeTaMWcx45fCoEF6Q-8/view?usp=drive_link">
-										Download Now
-									</a>
+<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+	data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
+	Download Now
+</a>
 								</div>
 							</div>
 							<a class="text-decoration-none">
@@ -668,7 +729,8 @@
 									<img src="assets/images/catalogue/800x800/GLOSSY.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1tquBwU82EMNOzPy6nChGl-jAzFBnmuHk/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -690,7 +752,8 @@
 									<img src="assets/images/catalogue/800x800/HIGH-GLOSS.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1HwXdDF8N2cd11k8jyJutGeFSxFALWk6D/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -712,7 +775,8 @@
 									<img src="assets/images/catalogue/800x800/ONYX-DESIGNS.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1nw_GkxR6JHdwpzFjNxUsdN5MCt8SgYVx/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -734,7 +798,8 @@
 									<img src="assets/images/catalogue/800x800/RUSTIC-MATT-1.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/16ewStXUFD20tzt21W4p523qJlaXK2ghH/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -756,7 +821,8 @@
 									<img src="assets/images/catalogue/800x800/SATIN.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1ZIyyW2gxobUNx5ZrWmUIRUwQU587sefj/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -778,7 +844,8 @@
 									<img src="assets/images/catalogue/800x800/SATVARIO-DESIGNS.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1Dn0NOqhKvfIzKc8D8QJNk0K6fSFwAv_h/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -800,7 +867,8 @@
 									<img src="assets/images/catalogue/800x800/WOOD.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/169mj8QXBThZwiY8w82hLyHtDwJAQ6K3L/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -830,7 +898,8 @@
 										alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1xq9RMQjMna7Nl1NXX38wcm5BdEbRPsnq/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -852,7 +921,8 @@
 									<img src="assets/images/catalogue/600x1200/BookMatch.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1aXi_87TjCIdFl0wAvpeVpDbaOGQ_RRKQ/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -874,7 +944,8 @@
 									<img src="assets/images/catalogue/600x1200/Carving.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1hS5Co2rM1plvSSCLx4lkZkMj_yAvF6J7/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -896,7 +967,8 @@
 									<img src="assets/images/catalogue/600x1200/DC-Collection.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1g2c-KjoByQE0ur9FSg2zEXLGfFATgLPB/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -918,7 +990,8 @@
 									<img src="assets/images/catalogue/600x1200/Decor-Collection.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/15jEEF_mO7-GqT_RJgXPKh8Xncp36EtJB/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -940,7 +1013,8 @@
 									<img src="assets/images/catalogue/600x1200/ENDLESS-CATALOGUE.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1wEiU5YFLWxzoUuc742Qt-8BbmI8uQBRn/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -962,7 +1036,8 @@
 									<img src="assets/images/catalogue/600x1200/Glossy-Collection-01.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1nMeK25QuKv8lRdg-C7eojia0RKfkgAy8/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -984,7 +1059,8 @@
 									<img src="assets/images/catalogue/600x1200/Glossy-Collection-02.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1jof7pGvamUH4c9JbDusXCVxXlPx9QPl_/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1006,7 +1082,8 @@
 									<img src="assets/images/catalogue/600x1200/Glossy-Collection-03.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1gWdFX9LVHCd4UjzjOP6yeAMZTYw71ZTg/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1028,7 +1105,8 @@
 									<img src="assets/images/catalogue/600x1200/Glossy-Collection-04.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1DY_tL-5UgqjP5FceNvy-A2TWxZqkRGju/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1050,7 +1128,8 @@
 									<img src="assets/images/catalogue/600x1200/Glossy-decor.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1BWUGNTbRiSJAF8CRCzLxAKIMLhn7VWaH/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1072,7 +1151,8 @@
 									<img src="assets/images/catalogue/600x1200/Infinite-Collection.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1wDV5qWxuf7elBQq69STYqeXD6n1sVln8/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1094,7 +1174,8 @@
 									<img src="assets/images/catalogue/600x1200/Light&Dark-series.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1EorfbTlsNf1lWnX-daZT4bjklSQl69sx/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1116,7 +1197,8 @@
 									<img src="assets/images/catalogue/600x1200/Marmi-Collection.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/19XqOPKJRXF48VjO4fqNo6wDcNagZOE3R/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1138,7 +1220,8 @@
 									<img src="assets/images/catalogue/600x1200/Matt-Collection.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1RoSAEQg1i1XN_i7pXdQxZlivlpXDs7SV/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1160,7 +1243,8 @@
 									<img src="assets/images/catalogue/600x1200/New-Collection.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1IncgEETLQDvSY87T4Pn0zITrXJZpHXRA/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1182,7 +1266,8 @@
 									<img src="assets/images/catalogue/600x1200/Platinum-Collection.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1WibDFewv0Rz5kNJzgqc6_9DzKC5TVDKr/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1204,7 +1289,8 @@
 									<img src="assets/images/catalogue/600x1200/Wooden-Collection.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1WOIiW9_rS6LJIQW3d3Xk462P6azo4pbz/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1231,7 +1317,8 @@
 										alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1Ntou64G6mdAd-Ns-lE3NhtOqctHRzhSg/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1253,7 +1340,8 @@
 									<img src="assets/images/catalogue/1200x1800/Glossy.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1MNhKC0dcdIzy_JIdiWeA98nk0e8KtneK/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1275,7 +1363,8 @@
 									<img src="assets/images/catalogue/1200x1800/Matt.png" class="w-100 h-100 object-fit-cover catalogue-img" alt="img">
 								</div>
 								<div class="shop-image-hover">
-									<a class="btn btn-sm btn-outline-secondary gap-10 catalogue-button" target="_blank" href="https://drive.google.com/file/d/1n0-VcfCi7G-Auk0wOPBzRW7g7Braz-tz/view?usp=drive_link">
+									<a class="btn btn-sm btn-outline-secondary catalogue-button" data-bs-toggle="modal"
+										data-download="https://drive.google.com/file/d/1abc123/view?usp=sharing" data-bs-target="#downloadFormModal">
 										Download Now
 									</a>
 								</div>
@@ -1478,8 +1567,58 @@
 				}
 			});
 		}
-	</script>
 
+
+
+
+	document.addEventListener("DOMContentLoaded", function () {
+		let downloadURL = "";
+
+		// When a "Download Now" button is clicked, store the correct download link
+		document.querySelectorAll(".catalogue-button").forEach(button => {
+			button.addEventListener("click", function () {
+				downloadURL = this.getAttribute("data-download");
+				document.getElementById("downloadLink").value = downloadURL;
+			});
+		});
+
+		// Handle form submission
+		document.getElementById("contactForm").addEventListener("submit", function (event) {
+			event.preventDefault(); // Prevent actual form submission
+
+			// Collect form data
+			let name = document.getElementById("InputName").value;
+			let company = document.getElementById("CompanyName").value;
+			let email = document.getElementById("InputEmail").value;
+			let country = document.getElementById("SelectCountry").value;
+
+			if (!name || !company || !email || !country) {
+				alert("Please fill in all required fields!");
+				return;
+			}
+
+			// Hide the modal
+			let modal = bootstrap.Modal.getInstance(document.getElementById('downloadFormModal'));
+			modal.hide();
+
+			// Redirect to the correct download link
+			window.open(downloadURL, "_blank");
+		});
+	});
+
+
+
+
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbzSUago8a5Wh3ajplCV5vNbQ-Q1QNi1txzeOwFeEcETTcjI_UYunfWaeRqQc3odYZ_W/exec'
+	const form = document.forms['catalogue_form']
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => alert("Thanks for Download a Catalogue..."))
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
 </body>
 
 

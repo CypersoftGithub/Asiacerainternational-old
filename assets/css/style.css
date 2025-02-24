@@ -235,8 +235,7 @@ h2, .h2 {
 
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 8.125rem;
-  }
+font-size: 5.125rem;  }
 }
 
 h3, .h3 {
@@ -623,7 +622,7 @@ progress {
 
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 20.25rem;
+    font-size: 12.25rem;
   }
 }
 
@@ -8064,8 +8063,7 @@ body {
     font-size: 80px;
   }
   .heading-title {
-    font-size: 90px;
-  }
+    font-size: 65px;  }
   .huge-text {
     font-size: 110px;
   }
@@ -8082,7 +8080,7 @@ body {
 
 @media (max-width: 991.98px) {
   .display-1 {
-    font-size: 150px;
+    font-size: 110px;
   }
   .display-2 {
     font-size: 125px;
@@ -8091,7 +8089,7 @@ body {
     font-size: 70px;
   }
   .heading-title {
-    font-size: 80px;
+    font-size: 53px;
   }
   .huge-text {
     font-size: 72px;
@@ -8103,13 +8101,13 @@ body {
     font-size: 70px;
   }
   .display-1 {
-    font-size: 105px;
+    font-size: 70px;
   }
   .display-3 {
     font-size: 54px;
   }
   .heading-title {
-    font-size: 45px;
+    font-size: 33px;
   }
   .huge-text {
     font-size: 66px;
@@ -8121,8 +8119,7 @@ body {
     font-size: 60px;
   }
   .display-1 {
-    font-size: 80px;
-  }
+font-size: 59px;  }
 }
 
 @media (min-width: 1370px) and (max-width: 1480px) {
@@ -8133,7 +8130,7 @@ body {
 
 @media (min-width: 1400px) and (max-width: 1460px) {
   .display-1 {
-    font-size: 280px;
+    font-size: 200px;
   }
 }
 
@@ -8654,7 +8651,7 @@ body {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover !important;
 }
 
 .carousel-captions .Asiacera-International-button {
@@ -9750,6 +9747,7 @@ body {
   background-image: url("../images/feedback-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .feedback-content {
@@ -11799,14 +11797,14 @@ svg {
 
 @media (max-width: 991.98px) {
   .subtitle {
-    font-size: 26px !important;
+    font-size: 16px !important;
     line-height: 140%;
   }
 }
 
 @media (max-width: 575.98px) {
   .subtitle {
-    font-size: 22px !important;
+    font-size: 10px !important;
   }
 }
 
@@ -12724,7 +12722,7 @@ textarea {
 }
 
 .stroke-heading svg {
-  stroke: var(--bs-black);
+  stroke: var(--bs-stroke-heading-color);
   height: var(--bs-stroke-heading-height);
 }
 
@@ -13074,7 +13072,7 @@ textarea {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #1b1b1b;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13241,6 +13239,40 @@ textarea {
 }
 
 /* Preloader End */
+
+/*==================================== Preloader End ====================================
+=========================================================================================
+=========================================================================================*/
+
+/*==================================== new Preloader End ====================================
+=========================================================================================
+=========================================================================================*/
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: fit-content;
+  font-size: 70px;
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0000;
+  -webkit-text-stroke: 1px #000;
+  background:
+    radial-gradient(1.13em at 50% 1.6em, #000 99%, #0000 101%) calc(50% - 1.6em) 0/3.2em 100% text,
+    radial-gradient(1.13em at 50% -0.8em, #0000 99%, #000 101%) 50% .8em/3.2em 100% repeat-x text;
+  animation: l9 2s linear infinite;
+}
+
+.loader:before {
+  content: "Asiacera";
+}
+
+@keyframes l9 {
+  to {
+    background-position: calc(50% + 1.6em) 0, calc(50% + 3.2em) .8em
+  }
+}
 
 /*==================================== Preloader End ====================================
 =========================================================================================
@@ -16311,7 +16343,7 @@ textarea {
 }
 
 .fs-4 {
-  font-size: calc(1.34375rem + 1.125vw);
+  font-size: calc(0.55rem + 1.125vw);
 }
 
 .fs-5 {
@@ -22407,7 +22439,7 @@ textarea {
     flex: 1 1 auto;
   }
   .flex-xl-row {
-    flex-direction: row;
+    /* flex-direction: row; */
   }
   .flex-xl-column {
     flex-direction: column;
@@ -25759,7 +25791,7 @@ textarea {
     font-size: 3.75rem;
   }
   .fs-4 {
-    font-size: 2.1875rem;
+    font-size: 1.59rem;
   }
   .fs-5 {
     font-size: 1.5rem;
@@ -26608,7 +26640,7 @@ position: absolute;
 }
 
 .hero-image{
-  filter: blur(1.9px);
+  /* filter: blur(0.9px); */
 }
 
 /* Hide the submenu by default */
