@@ -8980,7 +8980,8 @@ font-size: 59px;  }
 
 .header-bg-1 {
   --bs-header-bg: rgba(255, 255, 255, 0.20);
-  --bs-header-backdrop-filter: blur(12px);
+  /* --bs-header-backdrop-filter: blur(12px); */
+  background-color: white;
 }
 
 @media (max-width: 1199.98px) {
