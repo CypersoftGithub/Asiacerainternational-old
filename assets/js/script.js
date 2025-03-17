@@ -509,7 +509,7 @@ document.addEventListener("DOMContentLoaded", () => {
       map.setView(e.target.getLatLng(), 16);
     }
   
-    $.each(Asiacera-InternationalLocations, function(index, location) {
+    $.each(AsiaceraInternationalLocations, function(index, location) {
       // Create Marker
       var marker = L.marker(location.markerPoint, {
         title: location.title,
@@ -517,7 +517,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }).addTo(map);
   
       // Bind Popup
-      marker.bindPopup(`<div class="card card-map Asiacera-International-map-card"><div class="card-body">
+      marker.bindPopup(`<div class="card card-map AsiaceraInternational-map-card"><div class="card-body">
                           <h5 class="card-title service-title">${location.title}</h5><p class="mb-0 fw-semibold">${location.subtitle}</p><p class="mb-0 contact-home">${location.address}</p>                          
                         </div></div>`).on('click', clickZoom);
   

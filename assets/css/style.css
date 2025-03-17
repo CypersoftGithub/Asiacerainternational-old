@@ -8654,12 +8654,12 @@ font-size: 59px;  }
   object-fit: cover !important;
 }
 
-.carousel-captions .Asiacera-International-button {
+.carousel-captions .AsiaceraInternational-button {
   margin-top: 35px;
 }
 
 @media (max-width: 1620px) {
-  .carousel-captions .Asiacera-International-button {
+  .carousel-captions .AsiaceraInternational-button {
     margin-top: 16px;
   }
 }
@@ -9192,11 +9192,11 @@ font-size: 59px;  }
   }
 }
 
-.Asiacera-International-nav .nav {
+.AsiaceraInternational-nav .nav {
   --bs-nav-link-padding-x: 1.75rem;
 }
 
-.Asiacera-International-nav .navbar {
+.AsiaceraInternational-nav .navbar {
   --bs-navbar-nav-link-padding-x: 1.75rem;
   --bs-navbar-padding-y: 0;
   --bs-navbar-active-color:  var(--bs-secondary);
@@ -9205,33 +9205,33 @@ font-size: 59px;  }
 }
 
 @media (max-width: 1199.98px) {
-  .Asiacera-International-nav .navbar {
+  .AsiaceraInternational-nav .navbar {
     --bs-navbar-padding-y: 12px;
   }
 }
 
-.Asiacera-International-nav .navbar-nav {
+.AsiaceraInternational-nav .navbar-nav {
   --bs-nav-link-font-weight: 500;
 }
 
-.Asiacera-International-nav .nav-link {
+.AsiaceraInternational-nav .nav-link {
   --bs-navbar-nav-link-padding-x: 28px;
   --bs-nav-link-padding-x: 28px;
   --bs-nav-link-padding-y: 34px;
   --bs-navbar-active-color: var(--bs-secondary);
 }
 
-.Asiacera-International-nav .nav-link.active, .Asiacera-International-nav .nav-link.show, .Asiacera-International-nav .nav-link:hover {
+.AsiaceraInternational-nav .nav-link.active, .AsiaceraInternational-nav .nav-link.show, .AsiaceraInternational-nav .nav-link:hover {
   background: var(--bs-primary);
   color: var(--bs-navbar-active-color);
 }
 
-.Asiacera-International-nav .nav-link:focus-visible {
+.AsiaceraInternational-nav .nav-link:focus-visible {
   box-shadow: none;
 }
 
 @media (max-width: 1400px) {
-  .Asiacera-International-nav .nav-link {
+  .AsiaceraInternational-nav .nav-link {
     --bs-navbar-nav-link-padding-x: 24px;
     --bs-nav-link-padding-x: 24px;
     --bs-nav-link-padding-y: 30px;
@@ -9239,7 +9239,7 @@ font-size: 59px;  }
 }
 
 @media (max-width: 1200px) {
-  .Asiacera-International-nav .nav-link {
+  .AsiaceraInternational-nav .nav-link {
     --bs-navbar-nav-link-padding-x: 22px;
     --bs-nav-link-padding-x: 22px;
     --bs-nav-link-padding-y: 22px;
@@ -10457,7 +10457,7 @@ font-size: 59px;  }
   z-index: 1;
 }
 
-.project-contents .project-info p, .project-contents .project-info .Asiacera-International-button {
+.project-contents .project-info p, .project-contents .project-info .AsiaceraInternational-button {
   animation: fadeInUpBig 3s;
 }
 
@@ -11541,7 +11541,7 @@ font-size: 59px;  }
   margin: 0 auto;
 }
 
-.hero-landing-contents .Asiacera-International-button {
+.hero-landing-contents .AsiaceraInternational-button {
   margin-top: var(--bs-hero-btns-margin-top);
 }
 
@@ -11649,19 +11649,19 @@ svg {
   font-weight: 800 !important;
 }
 
-.Asiacera-International-button {
+.AsiaceraInternational-button {
   display: inline-block;
   position: relative;
   z-index: 1;
 }
 
 @media (max-width: 1520px) {
-  .Asiacera-International-button .btn {
+  .AsiaceraInternational-button .btn {
     --bs-btn-padding-x: 1.37rem;
     --bs-btn-padding-y: 0.568rem;
     --bs-btn-font-size: 18px;
   }
-  .Asiacera-International-button svg {
+  .AsiaceraInternational-button svg {
     width: 28px;
     height: 20px;
   }
@@ -12472,12 +12472,12 @@ textarea {
   left: 0;
 }
 
-.menu-image-contents .Asiacera-International-button {
+.menu-image-contents .AsiaceraInternational-button {
   width: 100%;
 }
 
 @media (max-width: 1199.98px) {
-  .menu-image-contents .Asiacera-International-button {
+  .menu-image-contents .AsiaceraInternational-button {
     width: auto;
   }
 }
@@ -26499,73 +26499,6 @@ position: absolute;
   /* filter: blur(0.9px); */
 }
 
-/* Hide the submenu by default */
-.dropdown-submenu .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  margin-top: 0;
-  border-radius: 0.25rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
- 
-}
-
-
-/* Hide dropdown menus initially */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  padding: 10px 0;
-  list-style: none;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  min-width: 200px;
-}
-
-
-
-/* Show dropdown on active */
-.dropdown.active>.dropdown-menu {
-  display: block;
-  background-color: #253B2F;
-}
-
-
-/* Style for submenu */
-.dropdown-submenu {
-  position: relative;
-}
-
-.submenu {
-  position: absolute;
-  left: 100%;
-  top: 0;
-  display: none;
-  min-width: 180px;
-  background: white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Show submenu when active */
-.dropdown-submenu.active>.submenu {
-      display: block;
-      background-color: #253B2F;
-      margin: -11px 3px;
-}
-
-@media only screen and (max-width: 1200px) {
-  /* Show submenu when active */
-    .dropdown-submenu.active>.submenu {
-      display: contents;
-      background-color: #253B2F;
-      margin: -11px 3px;
-    }
-}
-
-
-
 
   @media only screen and (max-width: 700px) {
     .coming-soon-img {
@@ -26649,3 +26582,56 @@ position: absolute;
     /*==================================== whatsapp End ====================================
   =========================================================================================
   =========================================================================================*/
+
+    /* Base styles for the dropdown menu */
+    .dropdown-menu {
+      background-color: #253b2f;
+      /* border: 1px solid #ddd; */
+      /* padding: 0.5rem 0; */
+    }
+  
+    /* Styles for dropdown items */
+    .dropdown-item {
+      color: #333;
+      /* Text color */
+      padding: 0.5rem 1rem;
+      /* Padding for each item */
+      text-decoration: none;
+      /* Remove underline */
+      display: block;
+      /* Make the item a block element */
+    }
+  
+    /* Hover effect for dropdown items */
+    .dropdown-item:hover {
+      /* background-color: #e9ecef; */
+      /* Light gray background on hover */
+      color: #000;
+      /* Darker text color on hover */
+    }
+  
+    /* Styles for the nested submenu */
+    .dropdown-submenu {
+      position: relative;
+      /* Ensure the submenu is positioned relative to its parent */
+    }
+  
+    /* Styles for the nested dropdown menu */
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      /* Align the submenu with the top of the parent item */
+      left: 100%;
+      /* Position the submenu to the right of the parent item */
+      margin-top: -0.5rem;
+      /* Adjust alignment */
+      margin-left: 0.1rem;
+      /* Add a small gap between parent and submenu */
+      display: none;
+      /* Hide the submenu by default */
+    }
+  
+    /* Show the nested dropdown menu on hover */
+    .dropdown-submenu:hover .dropdown-menu {
+      display: block;
+      /* Show the submenu when the parent is hovered */
+    }
